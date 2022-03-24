@@ -2,10 +2,24 @@
     <x-slot name="header">
         <h2>
             {{ __('Dashboard') }}
+            <ul>
+                <li>
+                    <a  href="{{route('admin.rusers')}}">users</a>
+                    <a href="{{route('admin.projects')}}">Projects</a>
+                </li>
+                <li></li>
+            </ul>
         </h2>
+
     </x-slot>
 
-    <div class="py-3">
-        You're logged in as admin!
-    </div>
+
+
+
 </x-app-layout>
+
+<style>
+    li{
+        list-style: none;
+    }
+</style>
